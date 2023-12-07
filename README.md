@@ -12,6 +12,8 @@ This resource covers deploying a Vanilla JS Vite app using Github Pages.
 - [Configure Vite for Deployment on Github Pages](#configure-vite-for-deployment-on-github-pages)
 - [Publish on Github Pages](#publish-on-github-pages)
 
+🎥 [Watch the lecture on this topic!](https://youtu.be/0Iw6SZpnHKY)
+
 ## Prerequisites
 
 In order to deploy to Github using this guide, you will need 

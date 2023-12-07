@@ -8,6 +8,7 @@ This resource covers deploying a Vanilla JS Vite app using Github Pages.
 
 **Table of Contents**
 - [Prerequisites](#prerequisites)
+- [What is Github Pages](#what-is-github-pages)
 - [Configure Vite for Deployment on Github Pages](#configure-vite-for-deployment-on-github-pages)
 - [Publish on Github Pages](#publish-on-github-pages)
 
@@ -27,7 +28,11 @@ There are a few ways to utilize Github Pages but the most straightforward is **t
 
 With a few VERY easy settings, we can publish our repo as long as that `index.html` file is in the root.
 
-**To test this out**, add an `index.html` file to the root of your repo and then follow the instructions below in the [Publish On Github Page section](#publish-on-github-pages). You can delete the `index.html` file once you've tested it.
+**To test this out**:
+* add an `index.html` file to the root of your repo
+* commit and push it
+* follow the instructions below in the [Publish On Github Page section](#publish-on-github-pages). 
+* delete the `index.html` file once you've tested it.
 
 ## Configure Vite for Deployment on Github Pages
 

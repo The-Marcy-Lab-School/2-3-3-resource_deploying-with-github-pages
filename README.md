@@ -1,5 +1,10 @@
 # Deploying a Vite Project with Github Pages
+
+So, you've built an app - congrats! You can run it locally, but wouldn't it be sweet if everyone on the internet could use it??
+
 This resource covers deploying a Vanilla JS Vite app using Github Pages. 
+
+> Note: An alternate (and more complex, but potentially smoother) approach can be found on [Vite's own docs](https://vitejs.dev/guide/static-deploy).
 
 **Table of Contents**
 - [Prerequisites](#prerequisites)
@@ -10,13 +15,27 @@ This resource covers deploying a Vanilla JS Vite app using Github Pages.
 
 In order to deploy to Github using this guide, you will need 
 * A project built using Vite
-* A Github repo for that project.
+* A Github repo with that Vite project inside.
+
+## What is Github Pages?
+
+Github Pages is ([according to their website](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages))
+
+> _... a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website._
+
+There are a few ways to utilize Github Pages but the most straightforward is **to have an `index.html` in the root of our repo** that Github Pages can easily find and serve.
+
+With a few VERY easy settings, we can publish our repo as long as that `index.html` file is in the root.
+
+**To test this out**, add an `index.html` file to the root of your repo and then follow the instructions below in the [Publish On Github Page section](#publish-on-github-pages). You can delete the `index.html` file once you've tested it.
 
 ## Configure Vite for Deployment on Github Pages
 
 **Objective(s)**: Prepare for deployment and build the production version of the app.
 
-So, you've built an app - congrats! You can run it locally, but wouldn't it be sweet if everyone on the internet could use it??
+> If you made an `index.html` file for testing above, delete it now.
+
+Again, our objective is to have an `index.html` file in the root of our directory.
 
 Assuming you built that app using Vite, the first step is to make the **production version** of the application. In order to do that, we'll need to configure Vite to create that version in the right location.
 

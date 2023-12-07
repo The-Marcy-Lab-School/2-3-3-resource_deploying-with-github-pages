@@ -36,13 +36,21 @@ With a few VERY easy settings, we can publish our repo as long as that `index.ht
 
 ## Configure Vite for Deployment on Github Pages
 
-**Objective(s)**: Prepare for deployment and build the production version of the app.
+**Objective(s)**: Build the production version of the app in the root of the directory.
 
 > If you made an `index.html` file for testing above, delete it now.
 
-Again, our objective is to have an `index.html` file in the root of our directory.
+Assuming you built that app using Vite, the first step is to make the **production version** of the application. To do this, run the command:
 
-Assuming you built that app using Vite, the first step is to make the **production version** of the application. In order to do that, we'll need to configure Vite to create that version in the right location.
+```
+npm run build
+```
+
+This will create the **production version** of your app in a folder called `dist/` (short for "distribution"). Take a look inside! It will have an `index.html` file and an `assets/` folder with your JavaScript and CSS.
+
+**However, we need that `index.html` to be in the root of the repo:**
+
+In order to do that, we'll need to configure Vite to create that version in the right location.
 
 Create a Vite configuration file
 

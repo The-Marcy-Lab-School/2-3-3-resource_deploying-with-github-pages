@@ -18,7 +18,7 @@ In order to deploy to Github using this guide, you will need
 
 So, you've built an app - congrats! You can run it locally, but wouldn't it be sweet if everyone on the internet could use it??
 
-Assuming you built that app using Vite, the first make the **production version** of the application. In order to do that, we'll need to configure Vite to create that version in the right location.
+Assuming you built that app using Vite, the first step is to make the **production version** of the application. In order to do that, we'll need to configure Vite to create that version in the right location.
 
 Create a Vite configuration file
 
@@ -40,6 +40,10 @@ export default defineConfig({
 });
 ```
 
+This does two things:
+* `build` and `outDir` determine where to put your compiled application. Normally it would put it in a folder called `dist/` but in order for Github pages to work, we want to build in the root of the repo.
+* `base` determines how the `index.html` file connects to the `.js` and `.css` files in your `assets/` folder
+
 Now, run the command
 
 ```sh
@@ -57,6 +61,8 @@ npm run preview
 ...which will serve the application at http://localhost:4173/
 
 Finally, **commit and push** your new compiled version to Github!
+
+> Note: each time your `npm run build`, new versions of your `assets` will be created and you will need to manually delete them.
 
 ## Publish on Github Pages
 
